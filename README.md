@@ -1,6 +1,6 @@
-# graphql-node-postgres
+# GraphQL-Node-Postgres
 
-This is a test GraphQL server created with Postgres and Node.js.  
+This is a GraphQL server created with Postgres and Node.js.  
 The actual database URL has been removed for obvious reasons. Before starting the app, add your database URL in models/index.js.
 
 # Start
