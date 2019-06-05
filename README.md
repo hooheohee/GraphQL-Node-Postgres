@@ -11,7 +11,7 @@ The actual database URL has been removed for obvious reasons. Before starting th
 
 ### About the project
 
-This project was created following the tutorial from [Ben Awad](https://www.youtube.com/watch?v=hqk30IVeYak).  
+This project was created following the tutorial from [Ben Awad](https://www.youtube.com/user/99baddawg).  
 
 
 ### Another GraphQL with MongoDB and Node.js
