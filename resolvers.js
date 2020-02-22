@@ -1,15 +1,13 @@
 export default {
-  User: {
-    
-  },
+  User: {},
   Query: {
     allUsers: (parent, args, { models }) => models.User.findAll(),
-    getUser: (parent, { username }, { models }) =>
+    getUser: (parent, { username, id }, { models }) =>
       models.User.findOne({
         where: {
-          username,
-        },
-      }),
+          username
+        }
+      })
   },
 
   Mutation: {
@@ -17,6 +15,6 @@ export default {
     updateUser: (parent, { username, newUsername }, { models }) =>
       models.User.update({ username: newUsername }, { where: { username } }),
     deleteUser: (parent, args, { models }) =>
-      models.User.destroy({ where: args }),
-  },
+      models.User.destroy({ where: args })
+  }
 };

@@ -1,13 +1,12 @@
-import Sequelize from 'sequelize';
+import Sequelize from "sequelize";
 
 const sequelize = new Sequelize(
-  '<Postgres URL>'
+  "postgres://dczzpyzf:cCC9QylT9kO6Afmgcg0Ie_xEnEedM4WE@isilo.db.elephantsql.com:5432/dczzpyzf"
 );
 
 const db = {
-  User: sequelize.import('./user'),
+  User: sequelize.import("./user")
 };
-
 
 db.sequelize = sequelize;
 // db.Sequelize = Sequelize;
