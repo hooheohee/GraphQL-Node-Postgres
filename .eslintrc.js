@@ -1,6 +1,6 @@
 module.exports = {
-    "extends": "airbnb-base",
-    "plugins": [
-        "import"
-    ]
+    parserOptions: {
+        ecmaVersion: 6,
+        sourceType: "module"
+    }
 };
