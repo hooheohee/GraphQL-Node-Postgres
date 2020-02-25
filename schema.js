@@ -3,8 +3,6 @@ export default `
   type User {
     id: Int!
     username: String!
-    createdAt: String!
-    updatedAt: String! 
   }
 
   type Query {

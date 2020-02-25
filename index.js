@@ -27,10 +27,9 @@ app.use(
   graphqlExpress({ schema, context: { models } })
 );
 
-models.sequelize
-  .sync()
-  .then(() =>
-    app.listen({ port: 3000 }, () =>
-      console.log("\n\n" + `Server ready at http://localhost:3000/graphiql`)
-    )
-  );
+models.sequelize.sync().then(() =>
+  app.listen({ port: 3000 }, () => {
+    console.log("\nServer API endpoint:  http://localhost:3000/graphql");
+    console.log("Interactive UI:       http://localhost:3000/graphiql\n");
+  })
+);
